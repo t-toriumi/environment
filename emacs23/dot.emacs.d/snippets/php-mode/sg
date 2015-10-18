@@ -1,0 +1,12 @@
+#contributor : Jun Nishikawa <topaz2.3333@gmail.com>
+#name : setter and getter
+# --
+public function set${1:name}($${2:$value})
+{
+  $this->${1:$(downcase text)} = $$2;
+}
+
+public function get$1()
+{
+  return $this->${1:$(downcase text)};
+}

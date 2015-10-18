@@ -1,0 +1,9 @@
+# main viewの左端にコミットIDを表示する
+set main-view = id date author commit-title:graph=yes,refs=yes
+
+# 横分割に強制する
+set vertical-split = no
+
+# 差分の前後の表示行数（diff-context)を指定 
+set diff-context = 6
+

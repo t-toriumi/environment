@@ -1,0 +1,7 @@
+#contributor : 
+#name : comment.class
+# --
+/**
+ * ${1:comment}
+ *
+ */

@@ -1,0 +1,32 @@
+[core]
+	excludesfile = ~/.gitignore_global
+	precomposeunicode = true
+	quotepath = false
+[user]
+	name = kamome
+	email = kamome4911@gmail.com
+[color]
+	ui = auto
+[alias]
+	br = branch
+	co = checkout
+	st = status
+        l  = log --pretty=format:'%C(green)%h %C(white)%<(10,trunc)%an %C(cyan)%ar %s'
+	ll = log --pretty=format:'%C(red reverse)%d%Creset%C(white reverse) %h% Creset %C(green reverse) %an %Creset %C(cyan)%ar%Creset%n%C(white bold)%w(80)%s%Creset%n%n%w(80,2,2)%b' --graph --name-status
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[merge]
+	tool = vimdiff
+	ff = false
+[mergetool]
+	prompt = false
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[pull]
+	rebase = preserve

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<root>
+  <list>
+    <item>
+        <name>C-c, C-x, C-z to IME off</name>
+        <identifier>Emacs + GoogleIME Issue.</identifier>
+        <only>TERMINAL</only>
+        <autogen>--KeyToKey-- KeyCode::C, VK_CONTROL, KeyCode::C, VK_CONTROL, KeyCode::JIS_EISUU</autogen>
+        <autogen>--KeyToKey-- KeyCode::X, VK_CONTROL, KeyCode::X, VK_CONTROL, KeyCode::JIS_EISUU</autogen>
+        <autogen>--KeyToKey-- KeyCode::Z, VK_CONTROL, KeyCode::Z, VK_CONTROL, KeyCode::JIS_EISUU</autogen>
+    </item>
+   </list>
+</root>

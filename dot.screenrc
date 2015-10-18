@@ -1,0 +1,46 @@
+# UTF-8
+defkanji utf-8
+defencoding utf-8
+encoding utf-8 utf-8
+defutf8 on
+cjkwidth on
+
+# 開始メッセージを省略
+startup_message off
+# ご臨終しても復帰可能に
+autodetach on
+# ベル
+vbell off
+bell_msg "^G"
+# スクロール
+defscrollback 10000
+# teratermなどでウィンドウサイズが変更されるのを防ぐ
+termcapinfo xterm* is=\E[r\E[m\E[2J\E[H\E[?7h\E[?1;4;6l 
+# erase background with current bg color
+defbce "on"
+# do not use 'screen-bce'
+term xterm-256color
+# キャプション
+#caption always "%{= Wk} %-w%{= KR}%n %t%{-}%+w %= %{=b Wk} %{= Wk}%y/%m/%d %{= Wk}%c"
+caption always "%{= Wk}%Y/%m/%d %D %{= Wk}%A%C | %{= WK}%-w%{=r Wk} [%t] %{-}%+w %= %{=b Wk}"
+# キーバインド
+escape ^Zz
+
+
+# 移動
+bind n next
+bind p prev
+bind l windowlist
+
+# 分割（ctrl-z x）
+bind -c X 2 split
+bind -c X o focus
+bind -c X 1 only
+bind -c X 0 remove
+bind x command -c X
+
+# リサイズ（ctrl-z r）
+bind r eval 'echo "Resize window"' 'command -c resize'
+bind -c resize ^]  command
+bind -c resize n eval 'resize +1' 'command -c resize'
+bind -c resize p eval 'resize -1' 'command -c resize'

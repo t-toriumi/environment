@@ -1,0 +1,4 @@
+#contributor : Jun Nishikawa <topaz2.3333@gmail.com>
+#name : ... function ($v) { return $v(...)}
+# --
+function(${1:\$v}){ return $1${param}$0; }

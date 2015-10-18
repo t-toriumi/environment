@@ -1,0 +1,12 @@
+#contributor : 
+#name : comment.method
+# --
+/**
+ * ${1:comment}
+ *
+ * @param  
+ * @return 
+ * @throws 
+ * @see    
+ * @link   
+ */

@@ -1,0 +1,19 @@
+#contributor : Jun Nishikawa <topaz2.3333@gmail.com>
+#name : ... function ...(...)
+# --
+/**
+ * ${description}
+ *
+ * @param ${type} ${arg}
+ *   ${description}
+ *
+ * @throws ${Exception}
+ *
+ * @return ${bool}
+ *   ${description}
+ *
+ */
+${public|protected|private} function ${name}(${args})
+{
+   $0
+}
