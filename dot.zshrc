@@ -96,6 +96,8 @@ zstyle ':completion:*:*files' ignored-patterns '*?.o' '*?~' '*\#'
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 # cd は親ディレクトリからカレントディレクトリを選択しないので表示させないようにする
 zstyle ':completion:*:cd:*' ignore-parents parent pwd
+# 大文字小文字を区別しない
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
 # 履歴表示
 #function __history() {
