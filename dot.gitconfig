@@ -12,7 +12,7 @@
 	br = branch
 	co = checkout
 	st = status
-        l  = log --pretty=format:'%C(green)%h %C(white)%<(10,trunc)%an %C(cyan)%ar %s'
+        l  = log --pretty=format:'%C(green)%h %C(white)%<(20,trunc)%an %<(80,trunc)%s'
 	ll = log --pretty=format:'%C(red reverse)%d%Creset%C(white reverse) %h% Creset %C(green reverse) %an %Creset %C(cyan)%ar%Creset%n%C(white bold)%w(80)%s%Creset%n%n%w(80,2,2)%b' --graph --name-status
 [diff]
 	tool = vimdiff
