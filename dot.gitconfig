@@ -2,6 +2,7 @@
 	excludesfile = ~/.gitignore_global
 	precomposeunicode = true
 	quotepath = false
+	editor = emacs -nw
 [user]
 	name = kamome
 	email = kamome4911@gmail.com
