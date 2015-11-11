@@ -22,9 +22,6 @@ export HOSTNAME=`hostname`
 export LC_COLLATE="ja_JP.UTF-8"
 export WORDCHARS="*?_-.[]~=&!#$%^(){}<>"
 
-# git access token
-source ~/.brew_api_token
-
 alias ll='ls -alF'
 alias ls='ls -F'
 alias ps='ps auxw'
@@ -39,6 +36,15 @@ function git-changed-files(){
   git status --short | peco | awk '{print $2}'
 }
 
-alias -g gh='$(git-hash)'
-alias -g gc='$(git-changed-files)'
+alias -g gih='$(git-hash)'
+alias -g gic='$(git-changed-files)'
 
+# git access token
+if [ -e ~/.brew_api_token ]; then
+    source ~/.brew_api_token
+fi
+
+# local setting
+if [ -e ~/.zshlocal ]; then
+    source ~/.zshlocal
+fi

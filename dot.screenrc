@@ -21,7 +21,6 @@ defbce "on"
 # do not use 'screen-bce'
 term xterm-256color
 # キャプション
-#caption always "%{= Wk} %-w%{= KR}%n %t%{-}%+w %= %{=b Wk} %{= Wk}%y/%m/%d %{= Wk}%c"
 caption always "%{= Wk}%Y/%m/%d %D %{= Wk}%A%C | %{= WK}%-w%{=r Wk} [%t] %{-}%+w %= %{=b Wk}"
 # キーバインド
 escape ^Zz

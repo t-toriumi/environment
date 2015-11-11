@@ -21,7 +21,7 @@
  (lambda (hook)
    (add-hook hook 'flyspell-prog-mode))
  '(
-   php-mode-hook
+   ;;php-mode-hook
    ))
 ;; バッファ全体がスペルチェック対象
 (mapc

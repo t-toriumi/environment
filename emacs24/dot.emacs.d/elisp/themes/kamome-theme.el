@@ -13,7 +13,7 @@
  '(region ((t (:background "#3a3a3a"))))
  '(minibuffer-prompt ((t (:foreground "#cd0000"))))
  ;; モードライン
- '(mode-line           ((t (:foreground "#F8F8F2" :background "#000000" :box (:line-width 1 :color "#000000" :style released-button)))))
+ '(mode-line           ((t (:foreground "#ffffff" :background "#005faf" :box (:line-width 1 :color "#ffffff" :style released-button)))))
  '(mode-line-inactive  ((t (:foreground "#ffffff" :background "#7f7f7f" :box (:line-width 1 :color "#ffffff")))))
  '(mode-line-buffer-id ((t (:foreground nil :background nil))))
  ;; ハイライト
@@ -28,7 +28,7 @@
  '(font-lock-string-face        ((t (:foreground "#808080"))))
  '(font-lock-keyword-face       ((t (:foreground "#005fd7"))))
  '(font-lock-builtin-face       ((t (:foreground "#0000ee"))))
- '(font-lock-constant-face      ((t (:foreground "#d78700"))))
+ '(font-lock-constant-face      ((t (:foreground "#d75f00"))))
  '(font-lock-error-face         ((t (:foreground "#cd0000"))))
  '(font-lock-warning-face       ((t (:foreground "#cd0000"))))
  '(font-lock-comment-face       ((t (:foreground "#005f00"))))
@@ -75,6 +75,7 @@
  '(helm-buffer-file                 ((t (:foreground "#ffffff"))))
  '(helm-buffer-directory            ((t (:foreground "#005fff"))))
  '(helm-ff-file                     ((t (:foreground "#ffffff"))))
+ '(helm-ff-symlink                  ((t (:foreground "#af00af" :background nil))))
  '(helm-ff-directory                ((t (:foreground "#005fff" :background nil))))
  '(helm-ff-dotted-directory         ((t (:foreground "#7f7f7f" :background nil))))
  '(helm-ff-dotted-symlink-directory ((t (:foreground "#7f7f7f" :background nil))))

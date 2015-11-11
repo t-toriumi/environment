@@ -14,7 +14,7 @@
 (defun php-mode-hooks ()
   ;; minor-mode
   (helm-gtags-mode 1)
-  (flycheck-mode 1)
+  ;;(flycheck-mode 1)
   (yas-minor-mode 1)
 
   ;; style

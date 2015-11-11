@@ -19,7 +19,7 @@
 
 ;; todo status
 (setq org-todo-keywords
-      '((sequence "TODO(t)" "WAIT(w)" "|" "DONE(d)" "SOMEDAY(s)")))
+      '((sequence "TODO(t)" "WAIT(w)" "DOING(d)" "|" "DONE(d)" "SOMEDAY(s)")))
 
 ;; capture template
 (setq org-capture-templates
