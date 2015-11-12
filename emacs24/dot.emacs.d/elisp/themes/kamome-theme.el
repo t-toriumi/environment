@@ -18,7 +18,7 @@
  '(mode-line-buffer-id ((t (:foreground nil :background nil))))
  ;; ハイライト
  '(highlight      ((t (:foreground "#000000" :background "#C4BE89"))))
- '(hl-line        ((t (:background "#293739"))))
+ '(hl-line        ((t (:underline t))))
  '(lazy-highlight ((t (:foreground "#000000" :background "#C4BE89"))))
  ;; font lock
  '(font-lock-preprocessor-face  ((t (:foreground "#8700ff"))))
@@ -64,6 +64,7 @@
  '(web-mode-html-attr-name-face            ((t (:foreground "#cd0000"))))
  '(web-mode-current-element-highlight-face ((t (:foreground "#cd0000"))))
  '(web-mode-param-name-face                ((t (:foreground "#000000"))))
+ '(php-annotations-annotation-face         ((t (:foreground "#005f00"))))
  ;; helm base
  '(helm-header           ((t (:foreground "#ffffff" :background "#ff8700"))))
  '(helm-candidate-number ((t (:foreground "#ffffff" :background "#005faf"))))

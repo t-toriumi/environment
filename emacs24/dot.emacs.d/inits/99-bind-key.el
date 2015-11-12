@@ -6,7 +6,7 @@
 (bind-key* "C-\\"  'undo)
 (bind-key* "C-w"   'backward-kill-word-or-kill-region)
 (bind-key* "C-v"   'half-page-up)
-(bind-key  "C-l"   'recenter)
+;;(bind-key  "C-l"   'recenter)
 (bind-key* "C-1"   'start-kbd-macro)
 (bind-key* "C-2"   'end-kbd-macro)
 (bind-key* "C-3"   'call-last-kbd-macro)

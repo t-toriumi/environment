@@ -17,9 +17,6 @@
 (fset 'yes-or-no-p 'y-or-n-p)
 ;; 括弧
 (show-paren-mode 1)
-;; 現在行を目立たせる
-(global-hl-line-mode)
-(setq hl-line-face 'underline)
 ;; カーソルの位置が何文字目かを表示する
 (column-number-mode t)
 ;; カーソルの位置が何行目かを表示する
@@ -34,3 +31,21 @@
 (setq font-lock-maximum-decoration t)
 ;; リージョンを反転しない
 ;;(setq transient-mark-mode nil)
+;; スクロール
+(scroll-bar-mode -1)
+;; 現在行を目立たせる
+(global-hl-line-mode 1)
+;; 色々試行錯誤するも、チラつきを我慢するか、重いのを我慢するかになる模様。。。
+;;(setq hl-line-face 'underline)
+;;(setq hl-line-idle-interval 0.1)
+;;(setq hl-line-face 'underline)
+;;(use-package hl-line+
+;;  :ensure hl-line+)
+;; (defun global-hl-line-timer-function ()
+;;   ;;(global-hl-line-unhighlight-all)
+;;   (let ((global-hl-line-mode t))
+;;     (global-hl-line-highlight)))
+
+;; (setq global-hl-line-timer
+;;       (run-with-idle-timer 0.1 t 'global-hl-line-timer-function))
+;;(toggle-hl-line-when-idle 1)
