@@ -29,8 +29,8 @@
 
  ;; font-lock
  '(font-lock-preprocessor-face  ((t (:foreground "#8700ff"))))
- '(font-lock-function-name-face ((t (:foreground "#0000ff"))))
- '(font-lock-type-face          ((t (:foreground "#ffff00"))))
+ '(font-lock-function-name-face ((t (:foreground "#0000d7"))))
+ '(font-lock-type-face          ((t (:foreground "#5f00ff"))))
  '(font-lock-variable-name-face ((t (:foreground "#87afff"))))
  '(font-lock-string-face        ((t (:foreground "#87005f"))))
  '(font-lock-keyword-face       ((t (:foreground "#00afff"))))
