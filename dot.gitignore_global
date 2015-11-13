@@ -1,2 +1,8 @@
 *~
 .DS_Store
+GTAGS
+GPATH
+GRTAGS
+\#*
+.\#*
+

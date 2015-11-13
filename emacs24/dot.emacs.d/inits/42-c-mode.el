@@ -10,4 +10,3 @@
 )
 
 (add-hook 'c-mode-hook 'c-mode-hooks)
-(add-hook 'c-mode-hook 'smartchr-keybindings-c/c++)
