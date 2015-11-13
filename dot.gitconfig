@@ -1,33 +1,52 @@
 [core]
-	excludesfile = ~/.gitignore_global
-	precomposeunicode = true
-	quotepath = false
-	editor = emacs -nw
+    excludesfile = ~/.gitignore_global
+    precomposeunicode = true
+    quotepath = false
+    editor = emacs -nw
 [user]
-	name = kamome
-	email = kamome4911@gmail.com
+    name  = kamome
+    email = kamome4911@gmail.com
 [color]
-	ui = auto
+    ui          = auto
+    status      = auto
+    diff        = auto
+    branch      = auto
+    interactive = auto
+    grep        = auto
 [alias]
-	br = branch
-	co = checkout
-	st = status
-        l  = log --pretty=format:'%C(green)%h %C(white)%<(20,trunc)%an %<(80,trunc)%s'
-	ll = log --pretty=format:'%C(red reverse)%d%Creset%C(white reverse) %h% Creset %C(green reverse) %an %Creset %C(cyan)%ar%Creset%n%C(white bold)%w(80)%s%Creset%n%n%w(80,2,2)%b' --graph --name-status
+    # base command
+    br   = branch
+    co   = checkout
+    st   = status
+    sh   = show
+    ft   = fetch
+    co   = checkout
+    ad   = add
+    ci   = commit
+    # cancel
+    unad = reset HEAD --
+    unci = reset --soft HEAD^
+    amci = commit -amend
+    # diff
+    ds = diff --staged
+    d1 = diff HEAD~
+    d2 = diff HEAD~~
+    d3 = diff HEAD~~~
+    d4 = diff HEAD~~~~
+    d5 = diff HEAD~~~~~
+    # log
+    l  = log --pretty=format:'%C(green)%h %C(white)%<(20,trunc)%an %<(80,trunc)%s'
+    ll = log --pretty=format:'%C(red reverse)%d%Creset%C(white reverse) %h% Creset %C(green reverse) %an %Creset %C(cyan)%ar%Creset%n%C(white bold)%w(80)%s%Creset%n%n%w(80,2,2)%b' --graph --name-status
+    # merge
+    unmerge = ls-files --unmerged
 [diff]
-	tool = vimdiff
+    tool = vimdiff
 [difftool]
-	prompt = false
+    prompt = false
 [merge]
-	tool = vimdiff
-	ff = false
+    tool = vimdiff
+    ff = false
 [mergetool]
-	prompt = false
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+    prompt = false
 [pull]
-	rebase = preserve
+    rebase = preserve
