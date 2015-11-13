@@ -34,6 +34,7 @@
 
 ;; C-x (reserve b)
 (bind-key* "C-x p"   'prev-window)
+(bind-key* "C-x SPC" 'cua-set-rectangle-mark)
 
 ;; C-c C- (php l)
 (bind-key* "C-c C-r" 'query-replace)
