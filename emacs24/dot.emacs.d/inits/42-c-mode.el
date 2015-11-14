@@ -7,6 +7,9 @@
   (setq tab-width                      4)
   (setq c-basic-offset                 4)
   (c-set-offset 'substatement-open'    0)
+
+  ;; ruler
+  (ruler-mode t)
 )
 
 (add-hook 'c-mode-hook 'c-mode-hooks)

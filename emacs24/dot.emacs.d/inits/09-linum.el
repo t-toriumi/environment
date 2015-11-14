@@ -13,6 +13,9 @@
            'c-mode-hook
            'php-mode-hook
            'css-mode-hook
-           'js2-mode-hook))
+           'js2-mode-hook
+           'web-mode
+           'css-mode
+           ))
   (add-hook hook (lambda () (linum-mode t))))
 

@@ -35,5 +35,9 @@
   (setq web-mode-php-offset           4)
   (setq web-mode-java-offset          4)
   (setq web-mode-asp-offset           4)
-  (setq web-mode-markup-indent-offset 2))
+  (setq web-mode-markup-indent-offset 2)
+  ;; ruler
+  (ruler-mode t)
+  (linum-mode t)
+)
 (add-hook 'web-mode-hook 'web-mode-hooks)

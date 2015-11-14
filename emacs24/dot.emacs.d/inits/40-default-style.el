@@ -4,3 +4,7 @@
 (setq-default c-basic-offset                 4)
 (setq-default truncate-lines                 t)
 (setq-default truncate-partial-width-windows t)
+
+;; ruler
+(setq-default fill-column -1)
+(setq-default comment-column -1)

@@ -15,6 +15,8 @@
   (setq tab-width                      2)
   (setq js2-basic-offset               2)
   (c-set-offset 'substatement-open'    0)
+  ;; ruler
+  (ruler-mode t)
 )
 
 (add-hook 'js2-mode-hook 'js2-mode-hooks)
