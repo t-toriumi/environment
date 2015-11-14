@@ -28,16 +28,32 @@ alias ps='ps auxw'
 alias tc='tar cvzf'
 alias tx='tar xvzf'
 
+# grep
+alias -g gr='grep --color -n '
+alias -g xg='|xargs grep --color -n '
+
+# peco
+alias jump='_jump'
+alias look='less $(find . -type f -maxdepth 1 | peco)'
+
+# ag & view
+function _jump(){
+  __path=$(ag $* | peco | awk -F: '{printf  $1 " +" $2}'| sed -e 's/\+$//')
+  if [ -n "$__path" ]; then
+    view $__path
+  fi
+}
+
 # git & peco.
-function git-hash(){
+function _git-hash(){
   git log --oneline --branches | peco | awk '{print $1}'
 }
-function git-changed-files(){
+function _git-changed-files(){
   git status --short | peco | awk '{print $2}'
 }
 
-alias -g gih='$(git-hash)'
-alias -g gic='$(git-changed-files)'
+alias -g gith='$(_git-hash)'
+alias -g gitc='$(_git-changed-files)'
 
 # git access token
 if [ -e ~/.brew_api_token ]; then
