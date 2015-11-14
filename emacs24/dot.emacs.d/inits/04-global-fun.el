@@ -56,3 +56,25 @@
       (process-send-eof proc))))
 (setq interprogram-cut-function   'paste-to-osx)
 (setq interprogram-paste-function 'copy-from-osx)
+
+;; バッファの*判定
+(defun asterisked? (buf-name)
+  (= 42 (car (string-to-list buf-name))))
+
+;; 次のバッファへ
+(defun next-buffer-with-skip* ()
+  (interactive)
+  (let ((current-buffer-name (buffer-name)))
+    (next-buffer)
+    (while (and (asterisked? (buffer-name))
+                (not (string= current-buffer-name (buffer-name))))
+      (next-buffer))))
+
+;; 前のバッファへ
+(defun previous-buffer-with-skip* ()
+  (interactive)
+  (let ((current-buffer-name (buffer-name)))
+    (previous-buffer)
+    (while (and (asterisked? (buffer-name))
+                (not (string= current-buffer-name (buffer-name))))
+      (previous-buffer))))

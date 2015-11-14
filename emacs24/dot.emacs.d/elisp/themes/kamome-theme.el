@@ -18,7 +18,7 @@
  '(minibuffer-prompt ((t (:foreground "#cd0000"))))
 
  ;; mode-line
- '(mode-line           ((t (:foreground "#ffffff" :background "#005faf" :box (:line-width 1 :color "#ffffff" :style released-button)))))
+ '(mode-line           ((t (:foreground "#ffffff" :background "#000000" :box (:line-width 1 :color "#ffffff" :style released-button)))))
  '(mode-line-inactive  ((t (:foreground "#ffffff" :background "#7f7f7f" :box (:line-width 1 :color "#ffffff")))))
  '(mode-line-buffer-id ((t (:foreground nil :background nil))))
 
@@ -29,7 +29,7 @@
 
  ;; font-lock
  '(font-lock-preprocessor-face  ((t (:foreground "#8700ff"))))
- '(font-lock-function-name-face ((t (:foreground "#0000d7"))))
+ '(font-lock-function-name-face ((t (:foreground "#005fff"))))
  '(font-lock-type-face          ((t (:foreground "#5f00ff"))))
  '(font-lock-variable-name-face ((t (:foreground "#87afff"))))
  '(font-lock-string-face        ((t (:foreground "#87005f"))))

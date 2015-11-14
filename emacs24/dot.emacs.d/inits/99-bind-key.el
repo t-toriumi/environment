@@ -21,6 +21,7 @@
 (bind-key* "M-;"  'comment-dwim)
 (bind-key* "M-2"  'er/expand-region)
 (bind-key* "M-3"  'er/contract-region)
+(bind-key* "M-q"  'next-buffer-with-skip*)
 
 ;; C-M-
 (bind-key* "C-M-k" 'backward-kill-line)
