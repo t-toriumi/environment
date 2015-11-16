@@ -2,9 +2,16 @@ path=(
   ~/bin ~/local/bin bin ~/usr/local/bin /bin /sbin /usr/local/bin /usr/bin /usr/sbin /opt/local/bin /opt/local/sbin
 )
 
+# VISUAL
+if [ -x "`which vim`" ]; then
+    export VISUAL=vim
+else
+    export VISUAL=vi
+fi
+
 # EDITOR
 if [ -x "`which emacs`" ]; then
-    export EDITOR=emacs
+    export EDITOR="emacs -nw"
 elif [ -x "`which vim`" ]; then
     export EDITOR=vim
 fi
