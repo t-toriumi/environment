@@ -55,6 +55,12 @@ function _git-changed-files(){
 alias -g gith='$(_git-hash)'
 alias -g gitc='$(_git-changed-files)'
 
+# git diff view
+function __vimd() {
+  vimdiff $1 <(git show remotes/origin/test:$1)
+}
+alias vimd=__vimd
+
 # git access token
 if [ -e ~/.brew_api_token ]; then
     source ~/.brew_api_token
