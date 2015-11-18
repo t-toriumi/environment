@@ -68,6 +68,11 @@ function __vimd() {
 }
 alias vimd=__vimd
 
+function __git_unmerges() {
+  git l  $1..$(gbn | sed -e 's/\://')
+}
+alias git_unmerges=__git_unmerges
+
 # git access token
 if [ -e ~/.brew_api_token ]; then
     source ~/.brew_api_token
