@@ -29,8 +29,8 @@ export HOSTNAME=`hostname`
 export LC_COLLATE="ja_JP.UTF-8"
 export WORDCHARS="*?_-.[]~=&!#$%^(){}<>"
 
-alias ll='ls -alF'
-alias ls='ls -F'
+#alias ll='gls -alF'
+#alias ls='gls -F'
 alias ps='ps auxw'
 alias tc='tar cvzf'
 alias tx='tar xvzf'

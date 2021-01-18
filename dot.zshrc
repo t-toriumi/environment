@@ -34,6 +34,14 @@ local WHITE=$'%{^[[1;37m%}'$
 export LSCOLORS=exfxcxdxbxegedabagacad
 export LS_COLORS='di=34:ln=35:so=32:pi=33:ex=31:bd=46;34:cd=43;34:su=41;30:sg=46;30:tw=42;30:ow=43;30'
 
+if [ -f ~/.dircolors ]; then
+    if type dircolors > /dev/null 2>&1; then
+        eval $(dircolors ~/.dircolors)
+    elif type gdircolors > /dev/null 2>&1; then
+        eval $(gdircolors ~/.dircolors)
+    fi
+fi
+
 # 自動補完を有効にする
 # コマンドの引数やパス名を途中まで入力して <Tab> を押すといい感じに補完してくれる
 autoload -U compinit; compinit -u
@@ -158,18 +166,18 @@ alias gbn=__git_branch
 # Emacsはbrew版をターミナルで利用する
 alias emacs='/usr/local/Cellar/emacs/26.1_1/bin/emacs -nw'
 alias gtags='/usr/local/Cellar/global/6.5.1/bin/gtags'
-alias screen='/usr/local/Cellar/screen/4.6.2/bin/screen -U'
+#alias screen='/usr/local/Cellar/screen/4.6.2/bin/screen -U'
 
 # 色の設定
 if [ `uname` = "FreeBSD" ]; then
   alias ls='ls -GF'
   alias ll='ls -alGF'
 elif [ `uname` = "Darwin" ]; then
-  alias ls='ls -GF'
-  alias ll='ls -alGF'
+  alias ls='gls -F --color'
+  alias ll='gls -alF --color'
 else
-  alias ls='ls -F --color=auto'
-  alias ll='ls -alF --color=auto'
+  alias ls='gls -F --color'
+  alias ll='gls -alF --color'
 fi
 
 # プロンプト

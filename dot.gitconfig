@@ -50,3 +50,9 @@
     prompt = false
 [pull]
     rebase = preserve
+[difftool "sourcetree"]
+    cmd = /usr/local/bin/code --wait --diff $LOCAL $REMOTE
+    path =
+[mergetool "sourcetree"]
+    cmd = /usr/local/bin/code -n --wait $MERGED
+    trustExitCode = true
