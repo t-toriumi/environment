@@ -23,12 +23,12 @@
   (setq c-basic-offset                 4)
   (c-set-offset 'substatement-open'    0)
 
-  ;; php-completion
-  (require 'php-completion)
-  ;;(use-package php-completion
-  ;;  :ensure php-completion)
+  ;; ;; php-completion
+  ;; (require 'php-completion)
+  ;; ;;(use-package php-completion
+  ;; ;;  :ensure php-completion)
 
-  (php-completion-mode t)
+  ;; (php-completion-mode t)
 
   ;; php-completoin & auto-complete
   (make-local-variable 'ac-sources)
