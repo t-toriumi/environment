@@ -1,0 +1,209 @@
+{
+  "title": "Emacs, Screen, IME Issue on iTerm2",
+  "rules": [
+    {
+      "description": "Ctrl+cでIMEをOFFにする",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "c",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "c",
+              "modifiers": [
+                "control"
+              ]
+            },
+            {
+              "key_code": "japanese_eisuu"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "keyboard_type_if",
+              "keyboard_types": [
+                "ansi",
+                "iso"
+              ]
+            },
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.googlecode\\.iterm2"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Ctrl+xでIMEをOFFにする",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "x",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "x",
+              "modifiers": [
+                "control"
+              ]
+            },
+            {
+              "key_code": "japanese_eisuu"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "keyboard_type_if",
+              "keyboard_types": [
+                "ansi",
+                "iso"
+              ]
+            },
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.googlecode\\.iterm2"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Ctrl+zでIMEをOFFにする",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "z",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "z",
+              "modifiers": [
+                "control"
+              ]
+            },
+            {
+              "key_code": "japanese_eisuu"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "keyboard_type_if",
+              "keyboard_types": [
+                "ansi",
+                "iso"
+              ]
+            },
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.googlecode\\.iterm2"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Meta+xでIMEをOFFにする",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "x",
+            "modifiers": {
+              "mandatory": [
+                "command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "x",
+              "modifiers": [
+                "command"
+              ]
+            },
+            {
+              "key_code": "japanese_eisuu"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "keyboard_type_if",
+              "keyboard_types": [
+                "ansi",
+                "iso"
+              ]
+            },
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.googlecode\\.iterm2"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Ctrl+Gでescape",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "g",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "g",
+              "modifiers": [
+                "control"
+              ]
+            },
+            {
+              "key_code": "escape"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.\\runningwithcrayons\\.Alfred"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
