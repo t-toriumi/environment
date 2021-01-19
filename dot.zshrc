@@ -164,8 +164,8 @@ function __git_branch() {
 alias gbn=__git_branch
 
 # Emacsはbrew版をターミナルで利用する
-alias emacs='/usr/local/Cellar/emacs/26.1_1/bin/emacs -nw'
-alias gtags='/usr/local/Cellar/global/6.5.1/bin/gtags'
+alias emacs='/usr/local/Cellar/emacs/27.1/bin/emacs -nw'
+alias gtags='/usr/local/Cellar/global/6.6.4_1/bin/gtags'
 #alias screen='/usr/local/Cellar/screen/4.6.2/bin/screen -U'
 
 # 色の設定

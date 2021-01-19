@@ -4,6 +4,7 @@
 (add-to-list 'load-path "~/.emacs.d/elisp/work")
 (add-to-list 'load-path "~/.emacs.d/elisp/themes")
 (add-to-list 'load-path "~/.emacs.d/elisp/auto-install")
+(add-to-list 'load-path "~/.emacs.d/elisp/php-completion")
 
 ;; バックアップ
 (setq backup-directory-alist `(("." . "~/.saves"))

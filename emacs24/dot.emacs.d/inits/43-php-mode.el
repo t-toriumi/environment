@@ -24,8 +24,9 @@
   (c-set-offset 'substatement-open'    0)
 
   ;; php-completion
-  (use-package php-completion
-    :ensure php-completion)
+  (require 'php-completion)
+  ;;(use-package php-completion
+  ;;  :ensure php-completion)
 
   (php-completion-mode t)
 

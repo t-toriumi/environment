@@ -1,5 +1,7 @@
-(use-package redo+
-  :ensure redo+)
+(require 'redo+)
+
+;;(use-package redo+
+;;  :ensure redo+)
 
 ;; 過去の undo を redo しない
 (setq undo-no-redo t)

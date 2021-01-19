@@ -32,7 +32,7 @@
 ;; リージョンを反転しない
 ;;(setq transient-mark-mode nil)
 ;; スクロール
-(scroll-bar-mode -1)
+;;(scroll-bar-mode -1)
 ;; 現在行を目立たせる
 (global-hl-line-mode 1)
 
