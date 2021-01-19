@@ -44,6 +44,7 @@
 (bind-key* "C-c M-r" 'replace-string)
 
 ;; C-x C-
+(bind-key* "C-x C-f" 'helm-find-files)
 (bind-key* "C-x C-h" 'highlight-symbol-at-point)
 (bind-key* "C-x C-n" 'highlight-symbol-next)
 (bind-key* "C-x C-p" 'highlight-symbol-prev)
