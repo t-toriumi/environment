@@ -1,6 +1,10 @@
-#contributor : Andrew Gwozdziewycz <web@apgwoz.com>
-#name : function ...(...)
+# -*- mode: snippet -*-
+# contributor: USAMI Kenta <tadsan@zonu.me>
+# name: function statement
+# key: function
+# group: definitions
 # --
-function ${function_name}(${function_args}) {
-   $0
+${4:public }function ${1:name}(${2:$arg, ...})
+{
+    $0
 }

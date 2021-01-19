@@ -1,7 +1,12 @@
-#contributor : Andrew Gwozdziewycz <web@apgwoz.com>
-#name : switch (...) {...}
+# -*- mode: snippet -*-
+# contributor: USAMI Kenta <tadsan@zonu.me>
+# name: switch
+# key: switch
+# group : control structure
 # --
-switch (${on}) {
-  $0
-  default:
+switch (${1:condition}) {
+    case ${2:expr}:
+        $0
+        break;
+    default:
 }

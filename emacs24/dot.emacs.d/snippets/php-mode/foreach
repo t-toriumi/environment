@@ -1,6 +1,9 @@
-#contributor : Andrew Gwozdziewycz <web@apgwoz.com>
-#name : foreach (...) {...}
+# -*- mode: snippet -*-
+# contributor: USAMI Kenta <tadsan@zonu.me>
+# name: foreach
+# key: foreach
+# group : control structure
 # --
-foreach (${collection} as ${var}) {
-   $0
+foreach (${1:$expression} as \$${2:value}) {
+    $0
 }

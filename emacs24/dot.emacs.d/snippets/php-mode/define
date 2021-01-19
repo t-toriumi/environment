@@ -1,4 +1,7 @@
-#contributor : Andrew Gwozdziewycz <web@apgwoz.com>
-#name : define(..., ...)
+# -*- mode: snippet -*-
+# contributor: USAMI Kenta <tadsan@zonu.me>
+# name: define
+# key: define
+# group: definitions
 # --
-define(${name}, ${value[, bool case_insensitive]})$0
+define('${1:NAME}', ${2:value});

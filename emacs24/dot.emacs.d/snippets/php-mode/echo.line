@@ -1,4 +1,0 @@
-#contributor : Andrew Gwozdziewycz <web@apgwoz.com>
-#name : echo.line(...)
-# --
-echo(__FILE__ . ":" . __LINE__ . "${str}\n")$0

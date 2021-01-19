@@ -1,6 +1,9 @@
-#contributor : Andrew Gwozdziewycz <web@apgwoz.com>
-#name : if (...) {...}
+# -*- mode: snippet -*-
+# contributor: USAMI Kenta <tadsan@zonu.me>
+# name: if
+# key: if
+# group : control structure
 # --
-if (${condition}) {
-   $0
+if (${1:condition}) {
+    $0
 }
