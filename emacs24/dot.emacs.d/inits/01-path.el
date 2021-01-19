@@ -2,7 +2,7 @@
 (add-to-list 'load-path "~/.emacs.d/elisp")
 (add-to-list 'load-path "~/.emacs.d/elisp/anything")
 (add-to-list 'load-path "~/.emacs.d/elisp/work")
-(add-to-list 'load-path "~/.emacs.d/elisp/themes")
+;;(add-to-list 'load-path "~/.emacs.d/elisp/themes")
 (add-to-list 'load-path "~/.emacs.d/elisp/auto-install")
 (add-to-list 'load-path "~/.emacs.d/elisp/php-completion")
 
