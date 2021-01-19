@@ -6,7 +6,7 @@
 
 ;;(use-package auto-install
 ;;  :ensure auto-install)
-(require 'auto-install)
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/auto-install/"))
-(auto-install-update-emacswiki-package-name t)
-(auto-install-compatibility-setup)
+;; (require 'auto-install)
+;; (add-to-list 'load-path (expand-file-name "~/.emacs.d/auto-install/"))
+;; (auto-install-update-emacswiki-package-name t)
+;; (auto-install-compatibility-setup)
