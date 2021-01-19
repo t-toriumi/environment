@@ -66,7 +66,7 @@
 (bind-key* "C-c f" 'helm-for-files)
 (bind-key* "C-c s" 'helm-swoop)
 (bind-key* "C-c p" 'helm-ls-git-ls)
-(bind-key* "C-c g" (lambda () (interactive) (setq current-prefix-arg '(4)) (call-interactively 'helm-do-grep)))
+(bind-key* "C-c g" 'helm-do-grep-ag)
 
 ;; helm mini-buffer
 (bind-key "C-h" 'delete-backward-char helm-map)
@@ -79,6 +79,7 @@
 (bind-key "C-w" 'backward-kill-word             helm-find-files-map)
 
 ;; helm gtags
+(global-unset-key "\C-t")
 (bind-key "C-t" 'helm-gtags-find-tag    helm-gtags-mode-map)
 (bind-key "M-t" 'helm-gtags-pop-stack   helm-gtags-mode-map)
 (bind-key "M-r" 'helm-gtags-find-rtag   helm-gtags-mode-map)
