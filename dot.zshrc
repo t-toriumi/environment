@@ -180,6 +180,9 @@ else
   alias ll='gls -alF --color'
 fi
 
+alias more='more -R'
+alias less='less -R'
+
 # プロンプト
 setopt prompt_subst
 if [ `whoami` = "root" ]; then

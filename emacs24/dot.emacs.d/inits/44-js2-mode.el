@@ -12,8 +12,8 @@
 (defun js2-mode-hooks ()
   ;; style
   (setq indent-tabs-mode             nil)
-  (setq tab-width                      2)
-  (setq js2-basic-offset               2)
+  (setq tab-width                      4)
+  (setq js2-basic-offset               4)
   (c-set-offset 'substatement-open'    0)
   ;; ruler
   (ruler-mode t)

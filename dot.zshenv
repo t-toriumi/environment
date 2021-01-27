@@ -40,8 +40,17 @@ alias -g gr='grep --color -n '
 alias -g xg='|xargs grep --color -n '
 
 # peco
+alias sshp='_sshp'
 alias jump='_jump'
 alias look='less $(find . -type f -maxdepth 1 | peco)'
+
+# ssh & peco
+function _sshp(){
+  __path=$(grep -w Host ~/.ssh/config | awk '{print $2}' | sort -r | peco --prompt "SSH to > ")
+  if [ -n "$__path" ]; then
+    ssh $__path
+  fi
+}
 
 # ag & view
 function _jump(){
