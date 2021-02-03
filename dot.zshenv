@@ -60,6 +60,23 @@ function _jump(){
   fi
 }
 
+# docker & peco
+function _sshd(){
+  __path=$(docker ps --format "{{.ID}}\t{{.Names}}" | peco --prompt "into > " | awk '{print$1}')
+  if [ -n "$__path" ]; then
+    docker exec -it $__path /bin/sh
+  fi
+}
+function _logd(){
+  __path=$(docker-compose config --service | peco --prompt "tail for >")
+  if [ -n "$__path" ]; then
+    docker-compose logs -f $__path
+  fi
+}
+
+alias sshd='_sshd'
+alias logd='_logd'
+
 # git & peco.
 function _git-hash(){
   git log --oneline --branches | peco | awk '{print $1}'
