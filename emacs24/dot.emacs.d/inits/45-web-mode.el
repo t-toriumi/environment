@@ -23,7 +23,6 @@
         ("php"  . (("beg" "end")
                    ("beg" "end")))))
 
-;; タグを自動で閉じる
 (setq web-mode-enable-auto-pairing t)
 (setq web-mode-enable-auto-closing t)
 (setq web-mode-enable-block-face t)
