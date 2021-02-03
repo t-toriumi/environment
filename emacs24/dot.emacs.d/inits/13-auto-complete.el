@@ -13,18 +13,14 @@
 
 ;; 補完ソース
 (setq ac-sources
-      '(ac-source-filename
-       ac-source-functions
-       ac-source-yasnippet
-       ac-source-variables
-       ac-source-symbols
-       ac-source-features
+      '(ac-source-yasnippet
        ac-source-abbrev
        ac-source-words-in-same-mode-buffers
-       ac-source-dictionary))
+       ac-source-dictionary
+       ac-source-gtags))
 
 ;; 手動で補完せずTABで補完開始(トリガーキー)
-(setq ac-auto-start 3)
+(setq ac-auto-start 0)
 (setq ac-dwim nil)
 (ac-set-trigger-key "TAB")
 
@@ -41,5 +37,7 @@
 ;; | `ac-completion-face` | インライン補完の文字色 |
 ;; | `ac-candidate-face`  | 補完メニューの背景色   |
 ;; | `ac-selection-face`  | 補完メニューの選択色   |
+(set-face-foreground 'ac-candidate-face  "#cccccc")
 (set-face-background 'ac-candidate-face  "#4e4e4e")
+(set-face-foreground 'ac-selection-face  "#ffffff")
 (set-face-background 'ac-selection-face  "#303030")

@@ -4,7 +4,7 @@
     quotepath = false
     editor = emacs -nw
 [user]
-    name  = kamome
+    name  = toriumi
     email = kamome4911@gmail.com
 [color]
     ui          = auto
