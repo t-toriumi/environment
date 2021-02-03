@@ -32,9 +32,18 @@
 ;; hook
 (defun web-mode-hooks ()
   ;; インデント設定
+  ;; htmlのインデント
   (setq web-mode-markup-indent-offset 4)
-  (setq web-mode-css-indent-offset 4)
-  (setq web-mode-code-indent-offset 4)
+  ;; CSSのインデント
+  (setq web-mode-css-indent-offset 2)
+  ;; Scriptのインデント
+  (setq web-mode-code-indent-offset 2)
+  ;; <style>の行頭
+  (setq web-mode-style-padding 0)
+  ;; <script>の行頭
+  (setq web-mode-script-padding 0)
+
+
   ;; ruler
   (ruler-mode t)
   (linum-mode t)
