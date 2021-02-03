@@ -108,9 +108,25 @@ zstyle ':completion:*:cd:*' ignore-parents parent pwd
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
 # 履歴表示
+#function __history() {
+#  history -E 1
+#}
+#alias his=__history
 alias his=anyframe-widget-execute-history
 
 # ディレクトリスタックに直接移動する
+#function __dirs() {
+#  if [ -z $1 ]; then
+#    dirs -v | perl -pe 's/\t/: /g'
+#  else
+#    dirs -v | perl -pe 's/\t/: /g' | grep $1
+#  fi
+#  echo -n "select number: "
+#  read newdir
+#  [ expr $newdir + 0 > /dev/null 2>&1 ]
+#  cd +"$newdir"
+#}
+#alias cdd=__dirs
 alias cdd=anyframe-widget-cdr
 
 # select history
@@ -166,14 +182,13 @@ fi
 
 alias more='more -R'
 alias less='less -R'
-alias ag='ag -u -i --hidden --pager "less -R"' 
 
 # プロンプト
 setopt prompt_subst
 if [ `whoami` = "root" ]; then
   PROMPT='[%F{red}%n@%m%F{default}]# '
 else
-  PROMPT='[%m$(gbn)]$ '
+  PROMPT='[%m$(gbn)]# '
 fi
 RPROMPT='[%F{green}%d%f%F{default}]'
 

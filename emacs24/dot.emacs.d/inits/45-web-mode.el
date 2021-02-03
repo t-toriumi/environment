@@ -13,7 +13,6 @@
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.tpl\\'"   . web-mode))
-(add-to-list 'auto-mode-alist '("\\.twig\\'"  . web-mode))
 
 ;;; その他設定
 (setq web-mode-enable-current-element-highlight t)
@@ -22,11 +21,7 @@
       '(("erb"  . (("beg" "end")))
         ("php"  . (("beg" "end")
                    ("beg" "end")))))
-
-;; タグを自動で閉じる
 (setq web-mode-enable-auto-pairing t)
-(setq web-mode-enable-auto-closing t)
-
 (setq web-mode-enable-block-face t)
 (setq web-mode-enable-part-face t)
 (setq web-mode-enable-comment-keywords t)
@@ -34,22 +29,15 @@
 ;; hook
 (defun web-mode-hooks ()
   ;; style
-  ;; インデント設定
-  (setq web-mode-markup-indent-offset 4)
-  (setq web-mode-css-indent-offset 4)
-  (setq web-mode-code-indent-offset 4)
+  (setq web-mode-html-offset          2)
+  (setq web-mode-css-offset           2)
+  (setq web-mode-script-offset        2)
+  (setq web-mode-php-offset           4)
+  (setq web-mode-java-offset          4)
+  (setq web-mode-asp-offset           4)
+  (setq web-mode-markup-indent-offset 2)
   ;; ruler
   (ruler-mode t)
   (linum-mode t)
-  )
-
-;; 色
-(custom-set-faces
- '(web-mode-block-face  ((t (:background nil))))
- '(web-mode-string-face ((t (:background nil))))
- '(web-mode-style-face  ((t (:background nil))))
- '(web-mode-part-face   ((t (:background nil))))
- '(web-mode-block-face  ((t (:background nil))))
- )
-
+)
 (add-hook 'web-mode-hook 'web-mode-hooks)

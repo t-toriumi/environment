@@ -1,11 +1,11 @@
 [core]
-	excludesfile = /Users/tadashi/.gitignore_global
+    excludesfile = ~/.gitignore_global
     precomposeunicode = true
     quotepath = false
     editor = emacs -nw
 [user]
-	name = toriumi
-	email = kamome4911@gmail.com
+    name  = kamome
+    email = kamome4911@gmail.com
 [color]
     ui          = auto
     status      = auto
@@ -56,5 +56,3 @@
 [mergetool "sourcetree"]
 	cmd = /usr/local/bin/code -n --wait $MERGED
 	trustExitCode = true
-[commit]
-	template = ~/.stCommitMsg
