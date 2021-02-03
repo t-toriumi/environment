@@ -43,10 +43,21 @@
   ;; <script>の行頭
   (setq web-mode-script-padding 0)
 
-
   ;; ruler
   (ruler-mode t)
   (linum-mode t)
+
+  (defvar ac-source-css-property-names
+    '((candidates . (loop for property in ac-css-property-alist
+                          collect (car property)))))
+
+  (setq ac-sources
+        '(ac-source-yasnippet
+          ac-source-abbrev
+          ac-source-css-property-names
+          ac-source-css-property
+          ac-source-words-in-same-mode-buffers
+          ac-source-dictionary))
 )
 
 ;; 色
