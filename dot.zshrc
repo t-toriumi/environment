@@ -182,13 +182,14 @@ fi
 
 alias more='more -R'
 alias less='less -R'
+alias ag='ag -u -i --hidden --pager "less -R"' 
 
 # プロンプト
 setopt prompt_subst
 if [ `whoami` = "root" ]; then
   PROMPT='[%F{red}%n@%m%F{default}]# '
 else
-  PROMPT='[%m$(gbn)]# '
+  PROMPT='[%m$(gbn)]$ '
 fi
 RPROMPT='[%F{green}%d%f%F{default}]'
 

@@ -31,12 +31,12 @@
   ;; (php-completion-mode t)
 
   ;; php-completoin & auto-complete
-  (make-local-variable 'ac-sources)
-  (setq ac-sources '(
-                     ac-source-words-in-same-mode-buffers
-                     ac-source-php-completion
-                     ac-source-filename
-                     ac-source-yasnippet))
+  ;; (make-local-variable 'ac-sources)
+  ;; (setq ac-sources '(
+  ;;                    ac-source-words-in-same-mode-buffers
+  ;;                    ac-source-php-completion
+  ;;                    ac-source-filename
+  ;;                   ac-source-yasnippet))
 )
 
 (add-hook 'php-mode-hook 'php-mode-hooks)

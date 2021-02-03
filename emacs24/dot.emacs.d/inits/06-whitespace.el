@@ -19,5 +19,8 @@
 (set-face-background 'whitespace-space nil)
 (set-face-bold-p     'whitespace-space t)
 
+;; popup表示で反応しちゃうので
+(set-face-background 'whitespace-empty nil)
+
 ;; 日本語空白の表示を全体に適用
 (global-whitespace-mode 1)
