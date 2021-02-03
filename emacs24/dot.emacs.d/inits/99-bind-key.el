@@ -77,6 +77,7 @@
 (bind-key "TAB" 'helm-execute-persistent-action helm-find-files-map)
 (bind-key "C-w" 'backward-kill-word             helm-read-file-map)
 (bind-key "C-w" 'backward-kill-word             helm-find-files-map)
+(bind-key "C-l" 'helm-execute-persistent-action helm-map)
 
 ;; helm gtags
 (global-unset-key "\C-t")

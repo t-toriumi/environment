@@ -16,7 +16,6 @@ bell_msg "^G"
 defscrollback 10000
 # teratermなどでウィンドウサイズが変更されるのを防ぐ
 termcapinfo xterm* is=\E[r\E[m\E[2J\E[H\E[?7h\E[?1;4;6l 
-#termcapinfo xterm* ti@:te@ 
 # erase background with current bg color
 defbce "on"
 # do not use 'screen-bce'
@@ -25,7 +24,6 @@ term xterm-256color
 caption always "%{= Wk}%Y/%m/%d %D %{= Wk}%A%C | %{= WK}%-w%{=r Wk} [%t] %{-}%+w %= %{=b Wk}"
 # キーバインド
 escape ^Zz
-
 
 # 移動
 bind n next
@@ -44,3 +42,4 @@ bind r eval 'echo "Resize window"' 'command -c resize'
 bind -c resize ^]  command
 bind -c resize n eval 'resize +1' 'command -c resize'
 bind -c resize p eval 'resize -1' 'command -c resize'
+
