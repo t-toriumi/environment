@@ -35,7 +35,8 @@
 ;;(scroll-bar-mode -1)
 ;; 現在行を目立たせる
 (global-hl-line-mode 1)
-
+;; ベルを鳴らさない
+(setq visible-bell t)
 ;; 色々試行錯誤するも、チラつきを我慢するか、重いのを我慢するかになる模様。。。
 ;;(setq hl-line-idle-interval 0.1)
 ;;(use-package hl-line+

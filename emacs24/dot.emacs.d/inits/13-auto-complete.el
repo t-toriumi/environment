@@ -20,7 +20,7 @@
        ac-source-gtags))
 
 ;; 手動で補完せずTABで補完開始(トリガーキー)
-(setq ac-auto-start 0)
+(setq ac-auto-start 5)
 (setq ac-dwim nil)
 (ac-set-trigger-key "TAB")
 
@@ -40,4 +40,4 @@
 (set-face-foreground 'ac-candidate-face  "#cccccc")
 (set-face-background 'ac-candidate-face  "#4e4e4e")
 (set-face-foreground 'ac-selection-face  "#ffffff")
-(set-face-background 'ac-selection-face  "#303030")
+(set-face-background 'ac-selection-face  "#587fff")

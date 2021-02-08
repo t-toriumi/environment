@@ -8,7 +8,7 @@
 
 ;; auto load
 (autoload 'web-mode "web-mode" "Major mode for editing web code." t)
-
+ 
 ;; auto mode
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
