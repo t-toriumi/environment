@@ -20,7 +20,7 @@
        ac-source-gtags))
 
 ;; 手動で補完せずTABで補完開始(トリガーキー)
-(setq ac-auto-start 5)
+(setq ac-auto-start 30)
 (setq ac-dwim nil)
 (ac-set-trigger-key "TAB")
 

@@ -66,7 +66,7 @@
 (bind-key* "C-c f" 'helm-for-files)
 (bind-key* "C-c s" 'helm-swoop)
 (bind-key* "C-c p" 'helm-ls-git-ls)
-(bind-key* "C-c g" 'helm-do-grep-ag)
+(bind-key* "C-c g" 'helm-do-ag)
 
 ;; helm mini-buffer
 (bind-key "C-h" 'delete-backward-char helm-map)
@@ -77,7 +77,9 @@
 (bind-key "TAB" 'helm-execute-persistent-action helm-find-files-map)
 (bind-key "C-w" 'backward-kill-word             helm-read-file-map)
 (bind-key "C-w" 'backward-kill-word             helm-find-files-map)
-(bind-key "C-l" 'helm-execute-persistent-action helm-map)
+(bind-key "C-j" 'helm-execute-persistent-action helm-map)
+(bind-key "C-j" 'helm-execute-persistent-action helm-ag-map)
+(bind-key "C-j" 'helm-execute-persistent-action helm-do-ag-map)
 
 ;; helm gtags
 (global-unset-key "\C-t")
