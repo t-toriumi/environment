@@ -8,7 +8,7 @@
 
 ;; auto load
 (autoload 'web-mode "web-mode" "Major mode for editing web code." t)
- 
+
 ;; auto mode
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
@@ -28,6 +28,10 @@
 (setq web-mode-enable-block-face t)
 (setq web-mode-enable-part-face t)
 (setq web-mode-enable-comment-keywords t)
+
+(setq web-mode-auto-close-style 2)
+(setq web-mode-tag-auto-close-style 2)
+
 
 ;; hook
 (defun web-mode-hooks ()
@@ -58,6 +62,11 @@
           ac-source-css-property
           ac-source-words-in-same-mode-buffers
           ac-source-dictionary))
+
+  ;; 手動で補完せずTABで補完開始(トリガーキー)
+  (setq ac-auto-start nil)
+  (setq ac-dwim nil)
+  (ac-set-trigger-key "TAB")
 )
 
 ;; 色
