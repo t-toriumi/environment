@@ -42,7 +42,7 @@ alias -g xg='|xargs grep --color -n '
 # peco
 alias sshp='_sshp'
 alias jump='_jump'
-alias look='less $(find . -type f -maxdepth 1 | peco)'
+alias look='less $(find . -type f -maxdepth 1 | xargs ls -rt | peco)'
 
 # ssh & peco
 function _sshp(){
