@@ -164,7 +164,7 @@ function __git_branch() {
 alias gbn=__git_branch
 
 # Emacsはbrew版をターミナルで利用する
-alias emacs='/usr/local/Cellar/emacs/27.1/bin/emacs -nw'
+alias emacs='/usr/local/Cellar/emacs-plus@27/27.2/bin/emacs -nw'
 alias gtags='/usr/local/Cellar/global/6.6.4_1/bin/gtags'
 #alias screen='/usr/local/Cellar/screen/4.6.2/bin/screen -U'
 
@@ -182,7 +182,7 @@ fi
 
 alias more='more -R'
 alias less='less -R'
-alias ag='ag -u -i --hidden --pager "less -R"' 
+alias ag='ag -i --hidden --pager "less -R"' 
 
 # プロンプト
 setopt prompt_subst
@@ -191,7 +191,7 @@ if [ `whoami` = "root" ]; then
 else
   PROMPT='[%m$(gbn)]$ '
 fi
-RPROMPT='[%F{green}%d%f%F{default}]'
+RPROMPT='[%F{green}%~%f%F{default}]'
 
 # スクリーン起動
 if [ "$WINDOW" = "" ] ; then

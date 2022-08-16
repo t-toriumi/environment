@@ -8,4 +8,7 @@ GPATH
 GRTAGS
 \#*
 .\#*
+style_admin.css
+style_admin.min.css
+style_admin.*.map
 
