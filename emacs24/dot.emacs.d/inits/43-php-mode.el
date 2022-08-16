@@ -2,8 +2,8 @@
 (use-package php-mode
   :ensure php-mode)
 
-(use-package php-auto-yasnippets
-    :ensure t)
+;;(use-package php-auto-yasnippets
+;;    :ensure t)
 
 ;; auto load
 (autoload 'php-mode "php-mode" "Major mode for editing php code." t)

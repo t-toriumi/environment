@@ -64,7 +64,7 @@
 (bind-key* "M-z"   'helm-resume)
 (bind-key* "C-x b" 'helm-buffers-list)
 (bind-key* "C-c f" 'helm-for-files)
-(bind-key* "C-c s" 'helm-swoop)
+(bind-key* "C-c s" 'helm-multi-swoop-all)
 (bind-key* "C-c p" 'helm-ls-git-ls)
 (bind-key* "C-c g" 'helm-do-ag)
 
