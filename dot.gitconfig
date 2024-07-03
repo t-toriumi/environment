@@ -49,7 +49,7 @@
 [mergetool]
     prompt = false
 [pull]
-    rebase = preserve
+    rebase = merges
 [difftool "sourcetree"]
 	cmd = /usr/local/bin/code --wait --diff $LOCAL $REMOTE
 	path = 
