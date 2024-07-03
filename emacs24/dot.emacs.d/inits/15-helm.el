@@ -1,7 +1,7 @@
 (use-package helm
   :ensure helm)
 
-(require 'helm-config)
+(require 'helm)
 (require 'helm-files)
 (require 'helm-mode)
 

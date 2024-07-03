@@ -12,6 +12,8 @@ fpath=(~/.zfunc $fpath)
 fpath=(~/.git_completion $fpath)
 fpath=(~/.zsh.d/anyframe(N-/) $fpath)
 
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # zsh plugin
 autoload -Uz anyframe-init
 anyframe-init
@@ -164,7 +166,7 @@ function __git_branch() {
 alias gbn=__git_branch
 
 # Emacsはbrew版をターミナルで利用する
-alias emacs='/usr/local/Cellar/emacs-plus@27/27.2/bin/emacs -nw'
+alias emacs='/opt/homebrew/Cellar/emacs-plus@27/27.2/bin/emacs -nw'
 alias gtags='/usr/local/Cellar/global/6.6.4_1/bin/gtags'
 #alias screen='/usr/local/Cellar/screen/4.6.2/bin/screen -U'
 
@@ -198,14 +200,12 @@ if [ "$WINDOW" = "" ] ; then
   screen
 fi
 
-function preexec() {
-  if [ $TERM_PROGRAM = 'iTerm.app' ]; then
-    mycmd=(${(s: :)${1}})
-    echo -ne "\ek$(hostname|awk 'BEGIN{FS="."}{print $1}'):$mycmd[1]\e\\"
-  fi
-}
-function precmd() {
-  if [ $TERM_PROGRAM = 'iTerm.app' ]; then
-    echo -ne "\ek$(hostname|awk 'BEGIN{FS="."}{print $1}'):idle\e\\"
-  fi
-}
+#function preexec() {
+#  if [ $TERM_PROGRAM = 'iTerm.app' ]; then
+#    mycmd=(${(s: :)${1}})
+#    echo -ne "\ek$(hostname|awk 'BEGIN{FS="."}{print $1}'):$mycmd[1]\e\\"
+#  fi
+#}
+#function precmd() {
+#  if [ $TERM_PROGRAM = 'iTerm.app' ]; then
+#    echo -ne "\ek$(hostname|awk 'BEGIN{FS="."}{print $1}'):idle\e\\"

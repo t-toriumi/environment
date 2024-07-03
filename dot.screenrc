@@ -3,7 +3,7 @@ defkanji utf-8
 defencoding utf-8
 encoding utf-8 utf-8
 defutf8 on
-cjkwidth on
+#cjkwidth off
 
 # 開始メッセージを省略
 startup_message off

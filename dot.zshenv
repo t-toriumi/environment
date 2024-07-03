@@ -11,7 +11,7 @@ fi
 
 # EDITOR
 if [ -x "`which emacs`" ]; then
-    export EDITOR="emacs -nw"
+    export EDITOR="/opt/homebrew/Cellar/emacs-plus@27/27.2/bin/emacs -nw"
 elif [ -x "`which vim`" ]; then
     export EDITOR=vim
 fi
